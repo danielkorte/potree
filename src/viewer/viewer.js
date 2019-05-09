@@ -311,6 +311,10 @@ Potree.Viewer = class PotreeViewer extends THREE.EventDispatcher{
 		}
 	}
 
+	setInputHandlerActive() {
+		this.inputHandler.activate();
+	}
+
 	getMinNodeSize () {
 		return this.minNodeSize;
 	};

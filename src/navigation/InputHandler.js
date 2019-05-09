@@ -35,7 +35,9 @@ Potree.InputHandler = class InputHandler extends THREE.EventDispatcher {
 		if (this.domElement.tabIndex === -1) {
 			this.domElement.tabIndex = 2222;
 		}
+	}
 
+	activate () {
 		this.domElement.addEventListener('contextmenu', (event) => { event.preventDefault(); }, false);
 		this.domElement.addEventListener('click', this.onMouseClick.bind(this), false);
 		this.domElement.addEventListener('mousedown', this.onMouseDown.bind(this), false);
